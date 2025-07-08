@@ -1,0 +1,14 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 2048MB
+      max-request-size: 2048MB
+#指定Mybatis的Mapper文件
+mybatis:
+  mapper-locations: classpath:mappers/*xml
+#指定Mybatis的实体目录
+  type-aliases-package: com.hsx.videototext.mybatis.entity
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+
